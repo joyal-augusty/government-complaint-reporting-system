@@ -1,0 +1,226 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+body {
+  background-color: #ffffff; 
+  background-image: 
+    radial-gradient(
+      circle at top left, 
+      rgba(255, 153, 51, 0.7) 0%,   /* Brighter Saffron */
+      rgba(255, 255, 255, 0) 70%
+    ),
+    radial-gradient(
+      circle at bottom right, 
+      rgba(18, 136, 7, 0.7) 0%,    /* Brighter Green */
+      rgba(255, 255, 255, 0) 70%
+    );
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  height: 100vh;
+}
+
+
+
+    /* ===== NAVBAR ===== */
+  header {
+  /* This creates a seamless gradient from Saffron (left) to White (middle) to Green (right) */
+  background: linear-gradient(
+    to right, 
+    #FF9933 0%,   /* Saffron */
+    #FFFFFF 50%,  /* Pure White */
+    #138808 100%  /* India Green */
+  );
+  
+  /* Retained your original padding and border settings */
+  border-bottom: 2px solid #e0e0e0;
+  padding: 12px 40px;
+  
+  /* Ensures default text color is readable */
+  color: #333; 
+}
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-spacer {
+      width: 120px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span:nth-child(1) {
+      color: #ff9933; /* Saffron */
+    }
+    .logo span:nth-child(2) {
+      color: #000080; /* Ashoka Blue */
+    }
+    .logo span:nth-child(3) {
+      color: #138808; /* Green */
+    }
+
+    .nav-buttons button {
+      padding: 8px 18px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .login-btn {
+      background-color: transparent;
+      border: 1px solid #000080;
+      color: #000080;
+    }
+
+    .signup-btn {
+      background-color: #000080;
+      color: #fff;
+    }
+
+    /* ===== MAIN SECTION ===== */
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .complaint-card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .complaint-card h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #000080;
+    }
+
+    /* ===== FORM ELEMENTS ===== */
+    /*select minister sector*/
+    label[for="sector"], 
+    label[for="description"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50; /* A nice professional dark blue/grey */
+}
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    /* ===== FILE UPLOAD ===== */
+    .file-upload {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .file-upload input[type="file"] {
+      font-size: 14px;
+    }
+
+
+    /* ===== SUBMIT BUTTON ===== */
+    .submit-btn {
+      background-color: #138808;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #0f6f06;
+    }
+    
+    input[type="file"] {
+  background: #ffffff;
+  border: 1px solid #FF9933; /* Subtle Saffron Border */
+  border-radius: 6px;
+  padding: 4px;
+  color: #555;      /* Text color for "No file chosen" */
+  width: fit-content;
+}
+
+input[type="file"]::file-selector-button {
+  background: #138808; /* India Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0f6c06; /* Slightly darker green on hover */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+    /* ===== FOOTER NOTE ===== */
+    .note {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      margin-top: 25px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        padding: 12px 20px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-spacer {
+        display: none;
+      }
+    }

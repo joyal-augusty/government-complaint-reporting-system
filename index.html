@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Democracy | Complaint Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+      <div class="nav-spacer"></div>
+
+      <div class="logo">
+        <span>Demo</span><span>cra</span><span>cy</span>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="complaint-card">
+      <h1>Post a Complaint</h1>
+
+      <form>
+        <!-- Minister Sector -->
+        <div class="form-group">
+          <label for="sector">Select Minister Sector</label>
+          <select id="sector">
+            <option>General Administration & Home (CM Office)</option>
+            <option>Finance & Taxation</option>
+            <option>Industries & Law</option>
+            <option>Health & Family Welfare</option>
+            <option>General Education & Labour</option>
+            <option>Higher Education & Social Justice</option>
+            <option>Public Works & Tourism</option>
+            <option>Local Self Government & Excise</option>
+            <option>Revenue & Housing</option>
+            <option>Agriculture & Soil Survey</option>
+            <option>Water Resources & Irrigation</option>
+            <option>Electricity & Power</option>
+            <option>Forests & Wildlife</option>
+            <option>Co-operation & Ports</option>
+            <option>Fisheries & Culture</option>
+            <option>Sports & Minority Welfare</option>
+            <option>Food & Civil Supplies</option>
+            <option>Animal Husbandry & Dairy</option>
+            <option>Transport (Motor Vehicles)</option>
+            <option>Registration & Archaeology</option>
+            <option>SC/ST & Backward Classes Welfare</option>
+          </select>
+        </div>
+
+        <!-- Complaint Description -->
+        <div class="form-group">
+          <label for="description">Complaint Description</label>
+          <textarea
+            id="description"
+            placeholder="Describe your complaint in detail..."
+          ></textarea>
+        </div>
+
+        <!-- File Upload -->
+        <div class="file-upload">
+          <input type="file" multiple />
+          <button type="submit" class="submit-btn">Submit Complaint</button>
+        </div>
+      </form>
+
+      <p class="note">
+        Attach supporting documents such as images, videos, or official files (optional).
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
