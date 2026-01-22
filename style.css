@@ -79,17 +79,6 @@ body {
       margin-left: 10px;
     }
 
-    .login-btn {
-      background-color: transparent;
-      border: 1px solid #000080;
-      color: #000080;
-    }
-
-    .signup-btn {
-      background-color: #000080;
-      color: #fff;
-    }
-
     /* ===== MAIN SECTION ===== */
     main {
       display: flex;
@@ -344,3 +333,24 @@ input[type="file"]::file-selector-button:hover {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+/*login and signup button */
+
+.login-btn, .signup-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.signup-btn {
+  background-color: #198754;
+  color: white;
+}
+
